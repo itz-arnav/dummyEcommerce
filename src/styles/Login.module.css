@@ -1,6 +1,6 @@
 
 .body{
-    background-color: #F7F7FC;
+    background : linear-gradient( 350deg,  rgba(150,93,233,1) 10.8%,#e5b3fe 94.3% );
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -54,7 +54,7 @@
 
 .btn{
     color: white;
-    background-color: #252F44;
+    background-color: #5a189a;
     font-size: 0.9rem;
     padding: 0.3rem 0.6rem;
     text-align: center;
@@ -89,7 +89,7 @@
     margin-top: 1.3rem;
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #8093f1;
+    color: #5a189a;
 }
 
 .details{

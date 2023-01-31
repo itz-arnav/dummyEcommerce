@@ -1,5 +1,5 @@
 import css from "../styles/Header.module.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaShoppingCart, FaFilter } from "react-icons/fa";
 import { useGlobalContext } from "../context/Context";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,7 @@ import {HiOutlineLogout} from "react-icons/hi";
 
 const Header = ({ location }) => {
 
-	const {items, setItems, setUser, setPassword, setCart, cart, btnText, setBtnText, selectedOption, setselectedOption } = useGlobalContext();
+	const {items, setItems, setUser, setPassword, cart,selectedOption, setselectedOption } = useGlobalContext();
 	
 
 	const navigate = useNavigate();
@@ -20,15 +20,15 @@ const Header = ({ location }) => {
 		navigate("/login");
 	};
 
-	const handleResetCart = (e) => {
-		e.preventDefault();
-		 setCart([]);
-		 let newBtnText = []
-		 btnText.forEach(element => {
-			newBtnText.push("Add To Cart");
-		 });
-		 setBtnText(newBtnText);
-	};
+	// const handleResetCart = (e) => {
+	// 	e.preventDefault();
+	// 	 setCart([]);
+	// 	 let newBtnText = []
+	// 	 btnText.forEach(element => {
+	// 		newBtnText.push("Add To Cart");
+	// 	 });
+	// 	 setBtnText(newBtnText);
+	// };
 	
 	const handleCartClick = (e) => {
 		e.preventDefault();
@@ -71,7 +71,7 @@ const Header = ({ location }) => {
 							<img src="/aotlogo.webp" alt="Company Logo" />
 						</Link>
 					</div>
-					<div className={css.navigations}>
+					{/* <div className={css.navigations}>
 						<ul className={css.links}>
 							<li>
 								<NavLink
@@ -91,7 +91,7 @@ const Header = ({ location }) => {
 								Reset Cart
 							</li>
 						</ul>
-					</div>
+					</div> */}
 					<div className={css.right}>
 						<div className={css.detailCart}>
 						<FaShoppingCart className={css.cart} onClick={handleCartClick}/>

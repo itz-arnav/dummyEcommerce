@@ -4,7 +4,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%,#e5b3fe 94.3% );
+	background-image: linear-gradient( 180deg, #6910a8 10.8%, #c670ff 94.3% );
 	color: white;
 }
 .container {
@@ -101,7 +101,7 @@
 /* bar section */
 
 .bar{
-  background-color: #fbfaff;
+  /* background-image: linear-gradient( 180deg, #c670ff 10.8%, #cd8ff6 94.3% ); */
   width: 100vw;
   height: 10vh;
   display: flex;
