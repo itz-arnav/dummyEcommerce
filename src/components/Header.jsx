@@ -20,16 +20,6 @@ const Header = ({ location }) => {
 		navigate("/login");
 	};
 
-	// const handleResetCart = (e) => {
-	// 	e.preventDefault();
-	// 	 setCart([]);
-	// 	 let newBtnText = []
-	// 	 btnText.forEach(element => {
-	// 		newBtnText.push("Add To Cart");
-	// 	 });
-	// 	 setBtnText(newBtnText);
-	// };
-	
 	const handleCartClick = (e) => {
 		e.preventDefault();
 		navigate("/cart");
@@ -71,27 +61,6 @@ const Header = ({ location }) => {
 							<img src="/aotlogo.webp" alt="Company Logo" />
 						</Link>
 					</div>
-					{/* <div className={css.navigations}>
-						<ul className={css.links}>
-							<li>
-								<NavLink
-									to="/"
-									className={css.link}
-								>
-									Home
-								</NavLink>
-							</li>
-							<NavLink
-								to="/about"
-								className={css.link}
-							>
-								About
-							</NavLink>
-							<li className={css.link} onClick={handleResetCart}>
-								Reset Cart
-							</li>
-						</ul>
-					</div> */}
 					<div className={css.right}>
 						<div className={css.detailCart}>
 						<FaShoppingCart className={css.cart} onClick={handleCartClick}/>

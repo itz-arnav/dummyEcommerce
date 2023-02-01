@@ -1,6 +1,6 @@
 
 .body{
-    background : linear-gradient( 350deg,  rgba(150,93,233,1) 10.8%,#e5b3fe 94.3% );
+    background : linear-gradient( 350deg,  #7ed56f 10.8%,#28b485 94.3% );
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -42,6 +42,7 @@
 }
 
 .inputContainer>input{
+    font-size: 1.1rem;
     padding: 0.3rem 0.5rem;
     border: 1px solid #ccc;
     border-radius: 1px;
@@ -54,8 +55,8 @@
 
 .btn{
     color: white;
-    background-color: #5a189a;
-    font-size: 0.9rem;
+    background-color: #28b485;
+    font-size: 1.1rem;
     padding: 0.3rem 0.6rem;
     text-align: center;
     width: 100%;
@@ -89,7 +90,7 @@
     margin-top: 1.3rem;
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #5a189a;
+    color: #28b485;
 }
 
 .details{

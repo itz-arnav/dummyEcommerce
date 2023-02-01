@@ -10,13 +10,10 @@ import css from "../styles/Checkout.module.css";
 
 const Checkout = () => {
   
-const {setCart, btnText, setBtnText} = useGlobalContext();
+const {setCart} = useGlobalContext();
 
 useEffectOnce(() => {
     setCart([]);
-    const btnList = [];
-    btnText.forEach(() => btnList.push("Add To Cart"));
-    setBtnText(btnList);
   })
 
   const defaultOptions = {

@@ -1,5 +1,5 @@
 .bgc{
-	background: linear-gradient( 0deg, #6910a8 12.8%, #d397fb 84.3% );
+	background-color: #333;
 }
 .container{
     width: 100vw;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    color: #111;
+    color:#eee;
 }
 
 .socials{
@@ -31,7 +31,7 @@
 }
 
 .newsletter > span {
-	color: #111;
+	color: #eee;
 	font-size: 1.9rem;
 	font-weight: 600;
 }

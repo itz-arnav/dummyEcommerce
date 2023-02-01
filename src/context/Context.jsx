@@ -12,9 +12,8 @@ const AppProvider = ({children}) => {
     const [selectedOption, setselectedOption] = useState("1");
     const btnList = [];
     data.forEach(() => btnList.push("Add To Cart"));
-    const [btnText, setBtnText] = useState(btnList);
 
-    return <AppContext.Provider value = {{user, setUser, password, setPassword, items, setItems, cart, setCart, btnText, setBtnText, selectedOption, setselectedOption}}>
+    return <AppContext.Provider value = {{user, setUser, password, setPassword, items, setItems, cart, setCart, selectedOption, setselectedOption}}>
         {children}
     </AppContext.Provider>
 }

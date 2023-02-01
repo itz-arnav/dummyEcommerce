@@ -14,7 +14,7 @@ const Total = () => {
 
     useEffect(() => {
         let newTotal = 0;
-        cart.forEach((item) => newTotal += item.price);
+        cart.forEach((item) => newTotal += item.qty * item.price);
         setTotal(newTotal);
     }, [cart]);
 

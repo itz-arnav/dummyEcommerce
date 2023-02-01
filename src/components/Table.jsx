@@ -4,20 +4,10 @@ import { useGlobalContext } from '../context/Context';
 import {GiCancel} from "react-icons/gi";
 
 const Table = () => {
-    const {cart, setCart, btnText, setBtnText} = useGlobalContext();
+    const {cart, setCart} = useGlobalContext();
     const handleRemove = (id) => {
         let newCart = cart.filter((item) => item.id !== id);
         setCart(newCart);
-        let newBtnText = [];
-        for(let i = 0; i<btnText.length; i++) {
-            if(i === id-1){
-                newBtnText.push("Add To Cart");
-            }
-            else{
-                newBtnText.push(btnText[i]);
-            }
-        }
-        setBtnText(newBtnText);
     }
   return (
     <div className={css.container}>
@@ -36,14 +26,15 @@ const Table = () => {
                     <tbody className={css.tbody}>
                         {
                             cart.map((item) => {
-                                const {id, img, title, price} = item;
+                                const {id, img, title, price, qty} = item;
+                                console.log(item);
                                 return (
                                     <tr key = {id}>
                                     <td className={css.imageTd} ><img src = {img} alt="" objectFit="cover" width={85} height={85}/></td>
                                     <td>{title}</td>
                                     <td>{price}</td>
-                                    <td>1</td>
-                                    <td>{price}</td>
+                                    <td>{qty}</td>
+                                    <td>{qty * price}</td>
                                     <td
                                     style={
                                         {
